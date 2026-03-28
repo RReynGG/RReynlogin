@@ -22,21 +22,21 @@ $stmt->bind_param("ss", $username, $password);
 $stmt->execute();
 $result = $stmt->get_result();
 
-
-// Eger bazada bu istifadeci varsa
+//Eger qeydiyat ugurlu olsa home acilacaq
 if($result->num_rows > 0){
 
-// Istifadeci login oldu ve home sehifesine kecir
-header("Location: home.php");
-exit();
+    // Doğrudursa
+    header("Location: home.php");
+    exit();
 
 }else{
 
-        echo "<script>
-                alert('Bu email artıq qeydiyyatdan keçib! Zəhmət olmasa başqa email istifadə edin.');
-                window.history.back(); // İstifadəçini geri - qeydiyyat səhifəsinə qaytarır
-              </script>";
-        exit();
+    // Səhv login
+    echo "<script>
+            alert('Username və ya şifrə yanlışdır!');
+            window.history.back();
+          </script>";
+    exit();
 
 }
 

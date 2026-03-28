@@ -32,8 +32,11 @@ exit();
 
 }else{
 
-// Eger username ve ya password sehvdirse fix.html sehifesine yonlendirir
-header( "Location: fix.html");
+        echo "<script>
+                alert('Bu email artıq qeydiyyatdan keçib! Zəhmət olmasa başqa email istifadə edin.');
+                window.history.back(); // İstifadəçini geri - qeydiyyat səhifəsinə qaytarır
+              </script>";
+        exit();
 
 }
 

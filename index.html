@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazmzade Anime | Giriş</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-dark: #0a0a0a;
+            --neon-pink: #ff3d7f;
+            --neon-blue: #00f0ff;
+            --glass-bg: rgba(255, 255, 255, 0.05);
+            --transition: 0.4s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.8)), 
+                        url(Photos/solo-leveling-arise-7680x4320-24734.jpg); /* Anime fonu */
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .main-seyfe {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 90%;
+            max-width: 1200px;
+            gap: 50px;
+        }
+
+        /* Sol tərəf: Xoş gəlmisiniz mətni */
+        .xosgel {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .xosgel h1 {
+            font-size: 3.5rem;
+            color: var(--neon-blue);
+            text-shadow: 0 0 15px var(--neon-blue);
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .xosgel p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        /* Container: Şüşə effekti (Glassmorphism) */
+        .container {
+            flex: 1;
+            background: var(--glass-bg);
+            backdrop-filter: blur(15px);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+            max-width: 450px;
+            animation: fadeIn 0.8s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .from-title {
+            font-size: 2rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--neon-pink);
+            text-shadow: 0 0 10px var(--neon-pink);
+        }
+
+        /* Giriş sahələri */
+        .input-group {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .input-group i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--neon-blue);
+        }
+
+        input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 12px 15px 12px 45px;
+            border-radius: 10px;
+            color: white;
+            font-size: 1rem;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        input:focus {
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Button */
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: none;
+            background: var(--neon-pink);
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 0 15px rgba(255, 61, 127, 0.4);
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 25px var(--neon-pink);
+            background: #ff1e6b;
+        }
+
+        .recover {
+            text-align: right;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+
+        .recover a {
+            color: #888;
+            text-decoration: none;
+        }
+
+        .recover a:hover { color: var(--neon-blue); }
+
+        .or {
+            text-align: center;
+            margin: 20px 0;
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .icons i {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: var(--glass-bg);
+            cursor: pointer;
+            font-size: 1.3rem;
+            transition: var(--transition);
+        }
+
+        .icons i:hover {
+            color: var(--neon-blue);
+            border-color: var(--neon-blue);
+            transform: translateY(-3px);
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.95rem;
+        }
+
+        .links button {
+            background: none;
+            border: none;
+            color: var(--neon-pink);
+            font-weight: 600;
+            cursor: pointer;
+            margin-left: 5px;
+            text-decoration: underline;
+        }
+
+        /* Mobil Versiya */
+        @media (max-width: 768px) {
+            .main-seyfe {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 50px;
+            }
+            .xosgel h1 { font-size: 2.5rem; }
+            .container { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-seyfe">
+        <div class="xosgel">
+            <h1>RReyn<br>Anime</h1>
+            <p>Dünyanın ən populyar animelərini bizim platformada izləyin. İndi daxil olun və macəraya başlayın!</p>
+        </div>
+
+        <div class="container" id="signIn">
+            <h1 class="from-title">Giriş</h1>
+            <form method="post" action="login.php">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="Username" placeholder="İstifadəçi adı" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="Şifrə" required>
+                </div>
+                <p class="recover">
+                    <a href="#">Şifrəni unutmusunuz?</a>
+                </p>
+                <input type="submit" class="btn" value="Daxil Ol" name="signin">
+            </form>
+            <p class="or">və ya</p>
+            <div class="icons">
+                <i class="fab fa-google"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+            <div class="links">
+                <p>Hesabınız yoxdur? <button id="signUpButton">Qeydiyyat</button></p>
+            </div>
+        </div>
+
+        <div class="container" id="signUp" style="display: none;">
+            <h1 class="from-title">Qeydiyyat</h1>
+            <form id="regForm" method="post" action="register.php">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="Username" placeholder="İstifadəçi adı" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" placeholder="Şifrə" required>
+                </div>
+                <input type="submit" class="btn" value="Qeydiyyatdan Keç" name="signup">
+            </form>
+            <div class="links">
+                <p>Artıq hesabınız var? <button id="signInButton">Daxil olun</button></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Formlar arası keçid
+        const signUpButton = document.getElementById('signUpButton');
+        const signInButton = document.getElementById('signInButton');
+        const signInForm = document.getElementById('signIn');
+        const signUpForm = document.getElementById('signUp');
+
+        signUpButton.addEventListener('click', () => {
+            signInForm.style.display = "none";
+            signUpForm.style.display = "block";
+        });
+
+        signInButton.addEventListener('click', () => {
+            signInForm.style.display = "block";
+            signUpForm.style.display = "none";
+        });
+
+        // Email Validasiyası
+        const regForm = document.getElementById('regForm');
+        regForm.addEventListener('submit', function(event) {
+            const emailInput = document.getElementById('email');
+            if (!emailInput.value.endsWith('@gmail.com')) {
+                event.preventDefault();
+                alert("Xəta: Yalnız @gmail.com ünvanları qəbul edilir!");
+                emailInput.style.borderColor = "var(--neon-pink)";
+            }
+        });
+    </script>
+</body>
+</html>
